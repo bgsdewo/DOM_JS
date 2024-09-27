@@ -14,3 +14,13 @@
 
 //melihat isi document indeks ke 10 dengan melihat innerTextnya
 // console.log(document.all[10].innerText);
+
+//Topic Tiga Mendapatkan Element Html Berdasarkan Id
+// //seleksi elemen apa yg diubah berdasarkan id
+// document.getElementById("banner");
+// //melihat isi object apa saja yg ada dalam id banner ini
+// const banner = document.getElementById("banner");
+// console.dir(banner);
+// //melihat isi object apa saja yg ada dalam id toc ini
+// const toc = document.getElementById("toc");
+// console.dir(toc);
