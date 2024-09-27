@@ -24,3 +24,29 @@
 // //melihat isi object apa saja yg ada dalam id toc ini
 // const toc = document.getElementById("toc");
 // console.dir(toc);
+
+//Topic Empat Mendapatkan Element Html Berdasarkan Tag Dan Class
+
+//berdasarkan tag elemen
+// document.getElementsByTagName("img");
+// document.getElementsByTagName("img"[0]);
+
+// const allImages = document.getElementsByTagName("img");
+// console.dir(allImages[1]);
+
+// const allImages = document.getElementsByTagName("img");
+
+// for (let img of allImages) {
+//   // console.log(img.src);
+//   img.src =
+//     "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1920px-Cat_August_2010-4.jpg";
+// }
+
+//berdasarkan class
+
+// const squareImages = document.getElementsByClassName("square");
+// //ini termasuk HTML COLLECTION
+// for (let img of squareImages) {
+//   img.src =
+//     "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1920px-Cat_August_2010-4.jpg";
+// }
