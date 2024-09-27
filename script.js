@@ -50,3 +50,19 @@
 //   img.src =
 //     "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1920px-Cat_August_2010-4.jpg";
 // }
+
+//topic Lima Lebih Mudah Memilih Element Dengan Menggunakan Queryselector
+// document.querySelector("p");
+// document.querySelector("#banner");
+// document.querySelector(".square");
+// document.querySelectorAll("p");
+// document.querySelectorAll("p a");
+// document.querySelector("input[type='checkbox']");
+// const links = document.querySelectorAll("a");
+
+// for (let link of links) {
+//   console.log(link.href);
+//   link.style.color = "rgb(0, 108, 134)";
+//   link.style.textDecorationColor = "magenta";
+//   link.style.textDecorationStyle = "wavy";
+// }
