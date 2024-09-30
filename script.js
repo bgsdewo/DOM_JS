@@ -66,3 +66,25 @@
 //   link.style.textDecorationColor = "magenta";
 //   link.style.textDecorationStyle = "wavy";
 // }
+
+//topic Enam Memahami Innerthtml, Innertext Dan Textcontent
+
+//case satu
+// const heading = document.querySelector("h1");
+// console.dir(heading);
+// console.log(heading.innerText); //ini sama semua
+// console.log(heading.textContent); //ini sama semua
+// console.log(heading.innerHTML); //ini sama semua
+
+// //case dua
+// const paragraph = document.querySelector("p");
+// console.log(paragraph.innerText);
+// console.log(paragraph.textContent);
+// console.log(paragraph.innerHTML);
+
+// //Case tiga
+// const links = document.querySelectorAll("p a");
+
+// for (let link of links) {
+//   link.innerText = "Saya adalah sebuah link!";
+// }
