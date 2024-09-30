@@ -174,3 +174,10 @@
 // h2.append("This is About Cat");
 // const h1 = document.querySelector("h1");
 // h1.insertAdjacentElement("afterend", h2);
+
+//topic dua belas Memahami Remove Dan Removechild
+// const firstLi = document.querySelector("li");
+// firstLi.parentElement.removeChild(firstLi);
+// //cara baru tapi cuman support bberapa browser
+// const image = document.querySelector("img");
+// image.remove();
