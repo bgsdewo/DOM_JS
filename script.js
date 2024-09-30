@@ -99,3 +99,18 @@
 // console.log(banner);
 // //cara mendapatkan atribute apa saja dalam sebuah elemen html
 // console.log(banner.getAttribute("class"));
+
+//topic Delapan Melakukan Styling Dengan Javascript Dom
+// const heading = document.querySelector("h1");
+// //cara ngecek ada style apa aja
+// console.log(heading.style);
+// //Catatan! jika kita menambahkan style di css bukan diHtmlnya
+// // itu tidak terdeteksi kecuali style yg diberikan berada dalam inline
+// // elemen htmlnya
+// const links = document.querySelectorAll("a");
+
+// for (let link of links) {
+//   link.style.color = "rgb(0, 108, 134)";
+//   link.style.textDecorationColor = "magenta";
+//   link.style.textDecorationStyle = "wavy";
+// }
