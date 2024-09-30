@@ -131,3 +131,25 @@
 // heading.classList.remove("border-danger");
 // //cara ngecek ada kelas (nama kelas)
 // console.log(heading.classList.contains("bg-info"));
+
+//topic sepuluh Menjelajahi Element Parent, Child Dan Sibling
+// const textBold = document.querySelector("b");
+// //bakal dibedah lebih lanjut
+// console.log(textBold);
+// //mengecek element parent dari textBold
+// console.log(textBold.parentElement);
+// const paragraph = textBold.parentElement;
+// // console.log(paragraph);
+// //mengecek turunan dari paragraph itu apa saja
+// console.log(paragraph.children);
+// //cara memilihnya
+// console.log(paragraph.children[6]);
+// //cara memanggilnya jika ada turunan/anakannya lagi
+// console.log(paragraph.children[6].children);
+
+//case baru
+// const squareImg = document.querySelector(".square");
+// //mendapatkan elemen seblumnya gunakan
+// console.log(squareImg.previousElementSibling);
+// //mendapatkan elemen selanjtnya gunakan
+// console.log(squareImg.nextElementSibling);
