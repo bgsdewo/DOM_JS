@@ -88,3 +88,14 @@
 // for (let link of links) {
 //   link.innerText = "Saya adalah sebuah link!";
 // }
+
+//topic tujuh Mendapatkan Attribute Yang Dimiliki Element Html
+// const banner = document.querySelector("#banner");
+// console.log(banner.alt);
+// banner.alt = "Gambar Kucing";
+// console.log(banner.alt);
+// //cara menambahkan atribut kelas pada gambar diatas
+// banner.setAttribute("class", "isian-class");
+// console.log(banner);
+// //cara mendapatkan atribute apa saja dalam sebuah elemen html
+// console.log(banner.getAttribute("class"));
