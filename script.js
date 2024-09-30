@@ -114,3 +114,20 @@
 //   link.style.textDecorationColor = "magenta";
 //   link.style.textDecorationStyle = "wavy";
 // }
+
+//Topic Sembilan Memanfaatkan Classlist Untuk Styling Dengan Dom
+// const heading = document.querySelector("h1");
+// //menambahkan kelas baru
+// heading.setAttribute("class", "bg-info");
+// // //menambahkan kelas baru agar tidak dtimpa dengan kelas sebelumnya
+// // let currentValue = heading.getAttribute("class");
+// // console.log(currentValue); //ini sudah menyimpan nama kelas barunya
+// // heading.setAttribute("class", `${currentValue} border-danger`);
+// //ada cara simplenya
+// console.log(heading.classList);
+// //menambahkan kelas baru
+// heading.classList.add("border-danger");
+// //menghapus kelass
+// heading.classList.remove("border-danger");
+// //cara ngecek ada kelas (nama kelas)
+// console.log(heading.classList.contains("bg-info"));
