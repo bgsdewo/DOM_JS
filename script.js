@@ -153,3 +153,24 @@
 // console.log(squareImg.previousElementSibling);
 // //mendapatkan elemen selanjtnya gunakan
 // console.log(squareImg.nextElementSibling);
+
+//topic Sebelas Memahami Append Dan Appendchild
+
+//case satu
+// const newImage = document.createElement("img");
+// console.dir(newImage);
+// newImage.src =
+//   "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/06/2023/12/27/pngtree-5-cute-kittens-looking-at-the-camera-image_2677857-1037121086.jpg";
+// console.log(newImage);
+// document.body.appendChild(newImage);
+// newImage.classList.add("square");
+
+// //case Dua
+// const paragraph = document.querySelector("p");
+// paragraph.append(" <b>Bagus InsyaAllah Gapapa</b>"); //ini sama kaya inntertext
+
+//case Tiga
+// const h2 = document.createElement("h2");
+// h2.append("This is About Cat");
+// const h1 = document.querySelector("h1");
+// h1.insertAdjacentElement("afterend", h2);
