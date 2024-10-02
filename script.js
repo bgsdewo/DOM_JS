@@ -98,3 +98,33 @@
 //   this.style.backgroundColor = generateRandomColor();
 //   this.style.color = generateRandomColor();
 // }
+
+//topic tujuh Belajar Keyboard Event Dan Mengenal Object Dalam Event
+// document.querySelector("button").addEventListener("click", (e) => {
+//   console.log(e);
+// });
+
+// const input = document.querySelector("input");
+// input.addEventListener("keydown", (e) => {
+//   //   console.log(e); //melihat di console
+//   //   console.log(e.key); //melihat di console
+//   //   console.log(e.code); //melihat di console
+//   switch (e.code) {
+//     case "ArrowUp":
+//       console.log("Tombol Atas");
+//       break;
+//     case "ArrowDown":
+//       console.log("Tombol Bawah");
+//       break;
+//     case "ArrowRight":
+//       console.log("Tombol Kanan");
+//       break;
+//     case "ArrowLeft":
+//       console.log("Tombol Kiri");
+//       break;
+//   }
+// });
+
+// input.addEventListener("keyup", () => {
+//   console.log("Input dirilis!");
+// });
