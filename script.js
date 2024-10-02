@@ -156,3 +156,28 @@
 //   //   console.log(newList);
 //   input.value = "";
 // });
+
+//topic sepuluh Event Input Dan Change Pada Form
+const form = document.querySelector("form");
+const input = document.querySelector("input");
+const list = document.querySelector("#notes");
+
+// input.addEventListener("change", (e) => {
+//   console.log("Nilai Berubah");
+// });
+
+input.addEventListener("input", (e) => {
+  document.querySelector("h1").innerText = input.value;
+  console.log("Nilai Berubah");
+});
+
+form.addEventListener("submit", function (e) {
+  //mencegah untuk tidak berpindah halaman(behavier)=kebiasaan
+  e.preventDefault();
+  const noteValue = input.value;
+  const newList = document.createElement("li");
+  newList.innerText = noteValue;
+  list.append(newList);
+  //   console.log(newList);
+  input.value = "";
+});
