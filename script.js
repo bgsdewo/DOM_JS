@@ -1,183 +1,19 @@
-//topic satu Apa itu Dom
-// ini berupa file gambar saja dokumentasinya
+// https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png
+const container = document.querySelector("#container");
+const baseImgURL =
+  "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
 
-// //Topic tiga Melihat Isi Document Object Model
+for (let i = 1; i <= 500; i++) {
+  const pokeBall = document.createElement("div");
+  pokeBall.classList.add("pokemon");
 
-//melihat isi dari document html
-// console.log(document);
+  const imgPokemon = document.createElement("img");
+  imgPokemon.src = `${baseImgURL}${i}.png`;
 
-//melihat isi dari semua document dengan indeks ke 11
-// console.log(document.all[11]);
+  const label = document.createElement("span");
+  label.innerText = `#${i}`;
 
-// //mengubah cat menjadi bird
-// console.log((document.all[11].innerText = "Bird"));
-
-//melihat isi document indeks ke 10 dengan melihat innerTextnya
-// console.log(document.all[10].innerText);
-
-//Topic Tiga Mendapatkan Element Html Berdasarkan Id
-// //seleksi elemen apa yg diubah berdasarkan id
-// document.getElementById("banner");
-// //melihat isi object apa saja yg ada dalam id banner ini
-// const banner = document.getElementById("banner");
-// console.dir(banner);
-// //melihat isi object apa saja yg ada dalam id toc ini
-// const toc = document.getElementById("toc");
-// console.dir(toc);
-
-//Topic Empat Mendapatkan Element Html Berdasarkan Tag Dan Class
-
-//berdasarkan tag elemen
-// document.getElementsByTagName("img");
-// document.getElementsByTagName("img"[0]);
-
-// const allImages = document.getElementsByTagName("img");
-// console.dir(allImages[1]);
-
-// const allImages = document.getElementsByTagName("img");
-
-// for (let img of allImages) {
-//   // console.log(img.src);
-//   img.src =
-//     "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1920px-Cat_August_2010-4.jpg";
-// }
-
-//berdasarkan class
-
-// const squareImages = document.getElementsByClassName("square");
-// //ini termasuk HTML COLLECTION
-// for (let img of squareImages) {
-//   img.src =
-//     "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1920px-Cat_August_2010-4.jpg";
-// }
-
-//topic Lima Lebih Mudah Memilih Element Dengan Menggunakan Queryselector
-// document.querySelector("p");
-// document.querySelector("#banner");
-// document.querySelector(".square");
-// document.querySelectorAll("p");
-// document.querySelectorAll("p a");
-// document.querySelector("input[type='checkbox']");
-// const links = document.querySelectorAll("a");
-
-// for (let link of links) {
-//   console.log(link.href);
-//   link.style.color = "rgb(0, 108, 134)";
-//   link.style.textDecorationColor = "magenta";
-//   link.style.textDecorationStyle = "wavy";
-// }
-
-//topic Enam Memahami Innerthtml, Innertext Dan Textcontent
-
-//case satu
-// const heading = document.querySelector("h1");
-// console.dir(heading);
-// console.log(heading.innerText); //ini sama semua
-// console.log(heading.textContent); //ini sama semua
-// console.log(heading.innerHTML); //ini sama semua
-
-// //case dua
-// const paragraph = document.querySelector("p");
-// console.log(paragraph.innerText);
-// console.log(paragraph.textContent);
-// console.log(paragraph.innerHTML);
-
-// //Case tiga
-// const links = document.querySelectorAll("p a");
-
-// for (let link of links) {
-//   link.innerText = "Saya adalah sebuah link!";
-// }
-
-//topic tujuh Mendapatkan Attribute Yang Dimiliki Element Html
-// const banner = document.querySelector("#banner");
-// console.log(banner.alt);
-// banner.alt = "Gambar Kucing";
-// console.log(banner.alt);
-// //cara menambahkan atribut kelas pada gambar diatas
-// banner.setAttribute("class", "isian-class");
-// console.log(banner);
-// //cara mendapatkan atribute apa saja dalam sebuah elemen html
-// console.log(banner.getAttribute("class"));
-
-//topic Delapan Melakukan Styling Dengan Javascript Dom
-// const heading = document.querySelector("h1");
-// //cara ngecek ada style apa aja
-// console.log(heading.style);
-// //Catatan! jika kita menambahkan style di css bukan diHtmlnya
-// // itu tidak terdeteksi kecuali style yg diberikan berada dalam inline
-// // elemen htmlnya
-// const links = document.querySelectorAll("a");
-
-// for (let link of links) {
-//   link.style.color = "rgb(0, 108, 134)";
-//   link.style.textDecorationColor = "magenta";
-//   link.style.textDecorationStyle = "wavy";
-// }
-
-//Topic Sembilan Memanfaatkan Classlist Untuk Styling Dengan Dom
-// const heading = document.querySelector("h1");
-// //menambahkan kelas baru
-// heading.setAttribute("class", "bg-info");
-// // //menambahkan kelas baru agar tidak dtimpa dengan kelas sebelumnya
-// // let currentValue = heading.getAttribute("class");
-// // console.log(currentValue); //ini sudah menyimpan nama kelas barunya
-// // heading.setAttribute("class", `${currentValue} border-danger`);
-// //ada cara simplenya
-// console.log(heading.classList);
-// //menambahkan kelas baru
-// heading.classList.add("border-danger");
-// //menghapus kelass
-// heading.classList.remove("border-danger");
-// //cara ngecek ada kelas (nama kelas)
-// console.log(heading.classList.contains("bg-info"));
-
-//topic sepuluh Menjelajahi Element Parent, Child Dan Sibling
-// const textBold = document.querySelector("b");
-// //bakal dibedah lebih lanjut
-// console.log(textBold);
-// //mengecek element parent dari textBold
-// console.log(textBold.parentElement);
-// const paragraph = textBold.parentElement;
-// // console.log(paragraph);
-// //mengecek turunan dari paragraph itu apa saja
-// console.log(paragraph.children);
-// //cara memilihnya
-// console.log(paragraph.children[6]);
-// //cara memanggilnya jika ada turunan/anakannya lagi
-// console.log(paragraph.children[6].children);
-
-//case baru
-// const squareImg = document.querySelector(".square");
-// //mendapatkan elemen seblumnya gunakan
-// console.log(squareImg.previousElementSibling);
-// //mendapatkan elemen selanjtnya gunakan
-// console.log(squareImg.nextElementSibling);
-
-//topic Sebelas Memahami Append Dan Appendchild
-
-//case satu
-// const newImage = document.createElement("img");
-// console.dir(newImage);
-// newImage.src =
-//   "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/06/2023/12/27/pngtree-5-cute-kittens-looking-at-the-camera-image_2677857-1037121086.jpg";
-// console.log(newImage);
-// document.body.appendChild(newImage);
-// newImage.classList.add("square");
-
-// //case Dua
-// const paragraph = document.querySelector("p");
-// paragraph.append(" <b>Bagus InsyaAllah Gapapa</b>"); //ini sama kaya inntertext
-
-//case Tiga
-// const h2 = document.createElement("h2");
-// h2.append("This is About Cat");
-// const h1 = document.querySelector("h1");
-// h1.insertAdjacentElement("afterend", h2);
-
-//topic dua belas Memahami Remove Dan Removechild
-// const firstLi = document.querySelector("li");
-// firstLi.parentElement.removeChild(firstLi);
-// //cara baru tapi cuman support bberapa browser
-// const image = document.querySelector("img");
-// image.remove();
+  pokeBall.appendChild(imgPokemon);
+  pokeBall.appendChild(label);
+  container.appendChild(pokeBall);
+}
