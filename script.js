@@ -141,3 +141,18 @@
 //   e.preventDefault();
 //   console.log("Harusnya ke google");
 // });
+
+//topic sembilan Praktek Input Realtime Dengan Event Dan Dom
+// const form = document.querySelector("form");
+// const input = document.querySelector("input");
+// const list = document.querySelector("#notes");
+// form.addEventListener("submit", function (e) {
+//   //mencegah untuk tidak berpindah halaman(behavier)=kebiasaan
+//   e.preventDefault();
+//   const noteValue = input.value;
+//   const newList = document.createElement("li");
+//   newList.innerText = noteValue;
+//   list.append(newList);
+//   //   console.log(newList);
+//   input.value = "";
+// });
