@@ -47,3 +47,21 @@
 // eventbtn.onclick = stepSatu;
 // eventbtn.onclick = stepDua;
 // //ini bakal mereplace stepSatu
+
+//topic lima Latihan Addeventlistener Untuk Generate Color
+const button = document.querySelector("button");
+const headingOne = document.querySelector("h1");
+
+button.addEventListener("click", () => {
+  const newColor = generateRandomColor();
+  document.body.style.backgroundColor = newColor;
+  headingOne.innerText = newColor;
+  console.log(newColor);
+});
+
+const generateRandomColor = () => {
+  const r = Math.floor(Math.random() * 255);
+  const g = Math.floor(Math.random() * 255);
+  const b = Math.floor(Math.random() * 255);
+  return `rgb(${r} ${g} ${b})`;
+};
