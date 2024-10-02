@@ -158,26 +158,46 @@
 // });
 
 //topic sepuluh Event Input Dan Change Pada Form
-const form = document.querySelector("form");
-const input = document.querySelector("input");
-const list = document.querySelector("#notes");
+// const form = document.querySelector("form");
+// const input = document.querySelector("input");
+// const list = document.querySelector("#notes");
 
-// input.addEventListener("change", (e) => {
+// // input.addEventListener("change", (e) => {
+// //   console.log("Nilai Berubah");
+// // });
+
+// input.addEventListener("input", (e) => {
+//   document.querySelector("h1").innerText = input.value;
 //   console.log("Nilai Berubah");
 // });
 
-input.addEventListener("input", (e) => {
-  document.querySelector("h1").innerText = input.value;
-  console.log("Nilai Berubah");
+// form.addEventListener("submit", function (e) {
+//   //mencegah untuk tidak berpindah halaman(behavier)=kebiasaan
+//   e.preventDefault();
+//   const noteValue = input.value;
+//   const newList = document.createElement("li");
+//   newList.innerText = noteValue;
+//   list.append(newList);
+//   //   console.log(newList);
+//   input.value = "";
+// });
+
+// topic sebelasMengenal Event Bubbling
+const button = document.querySelector("#changeColor");
+const container = document.querySelector("#container");
+
+button.addEventListener("click", function (e) {
+  container.style.backgroundColor = generateRandomColor();
+  e.stopPropagation();
 });
 
-form.addEventListener("submit", function (e) {
-  //mencegah untuk tidak berpindah halaman(behavier)=kebiasaan
-  e.preventDefault();
-  const noteValue = input.value;
-  const newList = document.createElement("li");
-  newList.innerText = noteValue;
-  list.append(newList);
-  //   console.log(newList);
-  input.value = "";
+container.addEventListener("click", function () {
+  container.classList.toggle("hide");
 });
+
+const generateRandomColor = () => {
+  const r = Math.floor(Math.random() * 255);
+  const g = Math.floor(Math.random() * 255);
+  const b = Math.floor(Math.random() * 255);
+  return `rgb(${r} ${g} ${b})`;
+};
