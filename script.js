@@ -26,3 +26,24 @@
 // buttn.onmouseover = scream;
 
 // //catatan event onclick bukan hanya dimiliki oleh button saja!
+
+//topic Empat Mengenal Fungsi Addeventlistener
+
+//cara ini terbaik untuk saat ini
+// const eventbtn = document.querySelector("#evenbtn");
+// // eventbtn.addEventListener("click", function () {
+// //   alert("clicked");
+// // });
+// eventbtn.addEventListener("click", stepSatu);
+// eventbtn.addEventListener("click", stepDua);
+
+// // //dibanding cara dibawah ini
+// function stepSatu() {
+//   console.log("satu");
+// }
+// function stepDua() {
+//   console.log("dua");
+// }
+// eventbtn.onclick = stepSatu;
+// eventbtn.onclick = stepDua;
+// //ini bakal mereplace stepSatu
