@@ -128,3 +128,16 @@
 // input.addEventListener("keyup", () => {
 //   console.log("Input dirilis!");
 // });
+
+//topic delapan Mengenal Event Preventdefault
+// const form = document.querySelector("form");
+// form.addEventListener("submit", function (e) {
+//   //mencegah untuk tidak berpindah halaman(behavier)=kebiasaan
+//   e.preventDefault();
+//   console.log("submit");
+// });
+
+// document.querySelector("a").addEventListener("click", function (e) {
+//   e.preventDefault();
+//   console.log("Harusnya ke google");
+// });
